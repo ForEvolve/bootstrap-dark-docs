@@ -1,12 +1,16 @@
 # Bootstrap Dark
-When loading the project, follow the Bootstrap instruction about how to set everything up.
-Then make sure you run `npm run css-docs`; this will add some tweaks to the `docs.css` file.
+When loading the project, follow the Bootstrap instructions about how to set everything up.
 
 Then you must copy the theme by running `npm run apply-theme-dark` or `npm run apply-theme-dark-watch`, depending if you want to watch for changes or not.
 
 Finally, `npm run docs-serve-dark` will serve Jekyll in `--watch` and `--incremental` mode.
 
 > Open `http://localhost:9001` in your browser to see the dark docs!
+
+## Tweaking the UI
+If you'd like to tweak the documentation UI a little, I've added a few fixes in the `assets/scss/docs-dark-fixes.scss` file
+
+Then run `npm run css-docs`; this will update the `docs.css` file.
 
 # Bootstrap
 <p align="center">

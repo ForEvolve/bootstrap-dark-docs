@@ -1,4 +1,7 @@
 # Bootstrap Dark
+This project loads the [bootstrap-dark](https://github.com/Carl-Hugo/bootstrap-dark) theme in a tweaked Bootstrap documentation website to help validate use-cases.
+
+## Getting Started
 When loading the project, follow the Bootstrap instructions about how to set everything up.
 
 Then you must copy the theme by running `npm run apply-theme-dark` or `npm run apply-theme-dark-watch`, depending if you want to watch for changes or not.

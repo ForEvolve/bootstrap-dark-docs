@@ -16,17 +16,11 @@ npm run dark-it-up
 
 ### CI npm repo
 
-To load the CI builds, uncomment the `registry=` line of the `.npmrc` file. Please don't commit it uncommented; worst case scenario, use the `.git/info/exclude` file to avoid doing so!
-
-### Custom documentation fixes
-
-Please add your documentation fixes to the following file: `/site/static/docs/4.3/assets/scss/docs-dark-fixes.scss`.
+To load the CI builds, uncomment the `registry=` line of the `.npmrc` file. Please don't commit it uncommented and you can always use the `.git/info/exclude` file to help you to avoid doing so!
 
 ## Tweaking the UI
 
-If you'd like to tweak the documentation UI a little, I've added a few fixes in the `assets/scss/docs-dark-fixes.scss` file
-
-Then run `npm run css-docs`; this will update the `docs.css` file.
+If you'd like to tweak the documentation UI a little, please add your documentation fixes to the following file: `/site/static/docs/4.3/assets/scss/docs-dark-fixes.scss`.
 
 # Bootstrap
 

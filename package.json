@@ -86,10 +86,8 @@
     "watch-css-docs": "nodemon --watch \"site/static/**/assets/scss/\" --ext scss --exec \"npm run css-docs\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
     "watch-js-docs": "nodemon --watch \"site/static/**/assets/js/src/\" --ext js --exec \"npm run js-docs\"",
-    "apply-theme-dark": "cpx \"node_modules/bootstrap-dark/dist/css/*.css\" assets/css",
-    "apply-theme-dark-watch": "cpx \"node_modules/bootstrap-dark/dist/css/*.css\" assets/css --watch",
-    "docs-serve-dark": "bundle exec jekyll serve --watch --incremental",
-    "dark-it-up": "npm-run-all --parallel css-docs apply-theme-dark-watch docs-serve-dark"
+    "apply-theme-dark": "cross-env-shell shx cp node_modules/@forevolve/bootstrap-dark/dist/css/*.css site/static/docs/$npm_package_version_short/dist/css",
+    "dark-it-up": "npm-run-all --parallel apply-theme-dark docs-serve watch-css-docs"
   },
   "style": "dist/css/bootstrap.css",
   "sass": "scss/bootstrap.scss",
@@ -104,7 +102,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap-dark": "^1.0.0-alpha-4"
+    "@forevolve/bootstrap-dark": "^1.0.0-alpha.723"
   },
   "peerDependencies": {
     "popper.js": "^1.14.7"

@@ -1,0 +1,27 @@
+.highlight {
+  background-color: #111;
+}
+
+.bd-example {
+  border-color: #111;
+}
+
+.bd-sidebar .nav > li > a,
+.bd-toc-item.active > .bd-toc-link,
+.bd-toc-link {
+  color: inherit;
+}
+
+.highlight pre code {
+  color: invert($color: #212529);
+}
+
+.bd-sidebar .nav > li > a:hover,
+.bd-sidebar .nav > .active:hover > a,
+.bd-sidebar .nav > .active > a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.bd-example-border-utils [class^='border'] {
+  background-color: invert(#f5f5f5);
+}
